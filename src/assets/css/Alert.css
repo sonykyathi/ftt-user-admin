@@ -1,0 +1,25 @@
+.alert-bar {
+    z-index: 100000;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+  }
+  .alert {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    opacity: 0.9;
+    background: var(--light-color);
+  }
+  .alert-danger {
+    padding: 20px;
+  background-color: rgb(153, 24, 24);
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+    /* color: rgb(153, 24, 24); */
+  }
+  .alert-success {
+    color: rgb(0, 94, 8);
+  }

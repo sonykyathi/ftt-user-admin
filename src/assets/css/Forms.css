@@ -1,0 +1,111 @@
+.no-position-modal{
+    position: initial;
+    overflow: initial !important;
+  }
+  .login-form-container {
+    width: 600px;
+    margin: 200px auto;
+    display: grid;
+    justify-items: center;
+  }
+  .form-card {
+    border-radius: 7px;
+    border: 1px solid #f1e8e8;
+    box-shadow: 0px 0px 4px -2px;
+  }
+  .register-form-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+  /* Login Form Style */
+  .login-form-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(
+45deg,rgb(41 190 255/50%),rgb(28 118 254/50%));
+    border-radius: 4px;
+    padding: 20px 30px;
+  }
+  .login-form-content .form-heading h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .login-form-content .form-group{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .login-form-content .form-group label{
+    display: block;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 400;
+  }
+  .login-form-content .form-group .form-control{
+    margin-bottom: auto;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    color: #212529;
+    font-weight: 700;
+    padding: 16px 20px;
+    line-height: 16px;
+    height: auto;
+  }
+  .form-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-action label{
+    margin-bottom: 0;
+    color: #fff;
+  }
+  .login-option{
+    margin-top: 20px;
+  }
+  .login-option label{
+    margin: auto;
+    color: #fff;
+  }
+  .login-option label a{
+    color: #fdac0b;
+    font-weight: 700;
+    margin-left: 3px;
+  }
+
+  
+  
+
+
+  /* Hide arrows from number field */
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+ .form-wallet{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -1rem;
+  color: white;
+ }
+
+ .form-createone{
+   color:#fdac0b;
+   text-decoration: underline;
+ }
+
+ .form-createone:hover{
+  color:#fdac0b;
+  text-decoration: underline;
+}
