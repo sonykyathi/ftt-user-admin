@@ -62,9 +62,9 @@ const ResetPassword = (props) => {
     setstate({ ...state, [e.target.name]: e.target.value })
   }
   return (
-    <>
-      <div className="form-card login-form-container container">
-        <form id="login" className="login-form-content" onSubmit={onSubmit}>
+    <div className="entry-page-wrapper">
+      <div className="login-form-container container">
+        <form id="login" className="login-form-content entry-form" onSubmit={onSubmit}>
           <div className="form-heading">
             <h2> Reset Password</h2>
           </div>
@@ -99,15 +99,13 @@ const ResetPassword = (props) => {
 
           </div>
 
-          <div className="form-action" style={{ margin: "0 auto" }}>
-            <button type="submit" className="btn login-form-btn">
-              Submit
-            </button>
+          <div className="login-button text-center">
+            <button type="submit" class="btn-style-lg btn-orange">Submit</button>
           </div>
 
         </form>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -18,7 +18,7 @@ const Profile = (props) => {
         <section className='content'>
           <div className='container-fluid'>
             <section id='tabs' class='project-tab'>
-              <form id='login' className='login-form-content'>
+              <form id='login' className='profile-tabs'>
                 <div class='row'>
                   <div class='col-md-12'>
                     <nav>
@@ -62,7 +62,7 @@ const Profile = (props) => {
                         </a>
                       </div>
                     </nav>
-                    <div class='tab-content' id='nav-tabContent'>
+                    <div class='tab-content profile-tabs-content' id='nav-tabContent'>
                       <div
                         class='tab-pane fade show active'
                         id='personalInfo'
@@ -70,7 +70,6 @@ const Profile = (props) => {
                         aria-labelledby='personalInfo-tab'
                       >
                         <div className='card'>
-                          <div className='card-header'>Profile Details</div>
                           <div className='card-body'>
                             <div className='row'>
                               <div className='col-lg-6'>
@@ -598,28 +597,29 @@ const Profile = (props) => {
                             <div className='row'>
                               <div className='col-lg-12'>
                                 <div
-                                  className='form-action'
+                                  className='form-action form-action-btn'
                                   style={{
-                                    justifyContent: 'flex-start',
-                                    alignContent: 'flex-start',
-                                    alignItems: 'flex-start',
+                                    justifyContent: 'flex-end',
+                                    alignContent: 'flex-end',
+                                    alignItems: 'flex-end',
                                   }}
                                 >
                                   <button
                                     onSubmit={onSubmit}
                                     type='submit'
-                                    className='btn login-form-btn'
-                                  >
-                                    Submit
-                                  </button>
-                                  <button
-                                    style={{ marginLeft: '5px' }}
-                                    onSubmit={onSubmit}
-                                    type='submit'
-                                    className='btn login-form-btn'
+                                    className='btn btn-gray'
                                   >
                                     Cancel
                                   </button>
+                                  <button
+                                  style={{ marginLeft: '10px' }}
+                                    onSubmit={onSubmit}
+                                    type='submit'
+                                    className='btn btn-blue'
+                                  >
+                                    Submit
+                                  </button>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -633,7 +633,6 @@ const Profile = (props) => {
                         aria-labelledby='changePassword-tab'
                       >
                         <div className='card'>
-                          <div className='card-header'>Change Password</div>
                           <div className='card-body'>
                             <div className='row'>
                               <div className='col-lg-3'></div>
@@ -689,22 +688,27 @@ const Profile = (props) => {
                             </div>
                             <div className='row'>
                               <div className='col-lg-12'>
-                                <div className='form-action'>
+                                <div className='form-action form-action-btn'
+                                  style={{
+                                    justifyContent: 'center',
+                                    alignContent: 'center',
+                                    alignItems: 'center',
+                                  }}>
                                   <button
+                                      onSubmit={onSubmit}
+                                      type='submit'
+                                      className='btn btn btn-gray'
+                                    >
+                                      Cancel
+                                    </button>
+                                  <button style={{ marginLeft: '10px' }}
                                     onSubmit={onSubmit}
                                     type='submit'
-                                    className='btn login-form-btn'
+                                    className='btn btn btn-blue'
                                   >
                                     Submit
                                   </button>
-                                  <button
-                                    style={{ marginLeft: '5px' }}
-                                    onSubmit={onSubmit}
-                                    type='submit'
-                                    className='btn login-form-btn'
-                                  >
-                                    Cancel
-                                  </button>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -717,7 +721,7 @@ const Profile = (props) => {
                         role='tabpanel'
                         aria-labelledby='nav-contact-tab'
                       >
-                        <h2>Login History</h2>
+                        <h2 className="text-center">No History Available</h2>
                       </div>
                     </div>
                   </div>

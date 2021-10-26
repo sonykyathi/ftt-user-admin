@@ -47,9 +47,9 @@ const ForgotPassword = () => {
     setstate({ ...state, [e.target.name]: e.target.value })
   }
   return (
-    <>
-      <div className="form-card login-form-container container">
-        <form id="login" className="login-form-content" onSubmit={onSubmit}>
+    <div className="entry-page-wrapper">
+      <div className="login-form-container container">
+        <form id="login" className="login-form-content entry-form" onSubmit={onSubmit}>
           <div className="form-heading">
             <h2> Reset Password</h2>
           </div>
@@ -68,15 +68,13 @@ const ForgotPassword = () => {
             <p style={{ marginTop: 5, color: "red" }}>{state.emailError}</p>
           </div>
 
-          <div className="form-action" style={{ margin: "0 auto" }}>
-            <button type="submit" className="btn login-form-btn">
-              Reset
-            </button>
-          </div>
+          <div className="login-button text-center">
+              <button type="submit" class="btn-style-lg btn-orange">Reset</button>
+            </div>
 
         </form>
       </div>
-    </>
+    </div>
   );
 }
 

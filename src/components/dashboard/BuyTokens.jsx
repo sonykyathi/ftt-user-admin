@@ -71,12 +71,13 @@ const BuyTokens = (props) => {
       <div className='content-wrapper buy-token-wrapper'>
         <ContentHeader title='Buy Tokens'></ContentHeader>
         <section className='content'>
-          <div className='text-center buytoken-content'>
-            <h4>Choose currency or crypto and calculate FTT price</h4>
-            <p>You can buy FTT at the given price using BNB,USDT, ETH  to be a part of our project</p>
-          </div>
+          
           <div className='container-fluid'>
-            <div className='row justify-content-center align-items-center'>
+            <div className='text-center buytoken-content'>
+              <h4>Choose currency or crypto and calculate FTT price</h4>
+              <p>You can buy FTT at the given price using BNB,USDT, ETH  to be a part of our project</p>
+            </div>
+            <div className='row justify-content-center'>
               <div className='col-lg-8'>
                 <form
                   id='login'
@@ -84,8 +85,6 @@ const BuyTokens = (props) => {
                   className='login-form-content'
                   autoComplete='off'
                 >
-                  
-                  
                     <Fragment>
                       <div className='row'>
                         <div className='col-lg-6'>
@@ -190,10 +189,8 @@ const BuyTokens = (props) => {
                       <div className='row'>
                         <div className='col-lg-12 '>
                           <div className='form-group'>
-                            <label htmlFor='amountcontribution'>
-                              Wallet Address
-                            </label>
-                            <span className="form-wallet"><a className ="form-createone" href="https://youtu.be/jnMxyXOTW8g" target="_blank" title="click hear">  Create one</a>Dont have a wallet?</span>
+                            <label className="wallet-label" htmlFor='amountcontribution'>Wallet Address</label>
+                            <span className="form-wallet">Dont have a wallet?<a className ="form-createone" href="https://youtu.be/jnMxyXOTW8g" target="_blank" title="click hear">  Create one</a></span>
                             
                             <input
                               type='text'
@@ -230,7 +227,7 @@ const BuyTokens = (props) => {
                           lockingTime == '' ?
                           (
                             <button
-                              className='btn login-form-btn'
+                              className='btn-lg login-form-btn btn-blue'
                               onClick={() => {
                                 setAlert(
                                   'Fill the Form First to make Payment',
@@ -276,7 +273,7 @@ const BuyTokens = (props) => {
               </div>
               {verifyReferalCode && (
                 <div className='col-lg-4'>
-                  <div className='card'>
+                  <div className='card token-calculator-card'>
                     <div className='card-header'>
                       <h5>Token Calculation</h5>
                     </div>

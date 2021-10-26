@@ -42,7 +42,7 @@ const Login = (props) => {
     <Fragment>
       <div className="entry-page-wrapper">
         <div className="login-form-container">
-          <form id="login" className="login-form-content" onSubmit={onSubmit}>
+          <form id="login" className="login-form-content entry-form" onSubmit={onSubmit}>
             <div className="form-heading">
               <h2> Login Form</h2>
             </div>
@@ -71,19 +71,21 @@ const Login = (props) => {
                 required
               />
             </div>
-            <label style={{ display: "flex", flexDirection: "row-reverse", marginTop: "-1rem" }}>
-              <Link to="/forgot-password">&nbsp; Forgot Password</Link>
-            </label>
-            <div className="form-action">
-              <label>
-                <input type="checkbox" name="remember" /> Remember me
+            <div className="login-input-options">
+              <label class="custom-checkbox login-remember">
+                  Remember me
+                  <input type="checkbox" name="remember" />
+                  <span class="checkmark"></span>
               </label>
-              <button type="submit" class="btn btn-lg btn-gradient-purple btn-glow animated">Login</button>
+              <div class="login-forget"><Link to="/forgot-password">&nbsp; Forgot Password?</Link></div>
             </div>
-            <div className="login-option text-center">
-              <label>
-                Don't have an account?<Link to="/register">Register</Link>
-              </label>
+
+            <div className="login-button text-center">
+              <button type="submit" class="btn-style-lg btn-orange">Login</button>
+            </div>
+
+            <div class="entry-form-swap text-center">
+              <span>Don't have an account?<a href="/register">Create new account</a>.</span>
             </div>
           </form>
         </div>

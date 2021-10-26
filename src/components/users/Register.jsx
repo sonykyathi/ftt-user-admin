@@ -56,7 +56,7 @@ console.log(success)
     <Fragment>
       <div className="entry-page-wrapper">
         <div className='register-form-container'>
-          <form id='login' className='login-form-content' onSubmit={onSubmit}>
+          <form id='login' className='login-form-content entry-form' onSubmit={onSubmit}>
             <div className='form-heading'>
               <h2>Sign Up Form</h2>
             </div>
@@ -1161,14 +1161,21 @@ console.log(success)
                 </div>
               </div>
               <div className="col-sm-12">
-                <div class="form-action">
-                  <label for="chb" class="form-check-label">
-                    <input type="checkbox" class="form-check d-inline" id="chb" required=""/>&nbsp;I accept all terms and conditions.
+
+                <div className="login-input-options">
+                  <label class="custom-checkbox login-remember"for="chb">
+                      I accept all terms and conditions.
+                      <input type="checkbox" name="remember" id="chb" required=""/>
+                      <span class="checkmark"></span>
                   </label>
-                  <button type="submit" class="btn btn-lg btn-gradient-purple btn-glow animated">Register</button>
                 </div>
-                <div className='login-option text-center'>
-                  <label>Already have an account?<Link to='/login'>Login here</Link></label>
+
+                <div className="login-button text-center">
+                  <button type="submit" class="btn-style-lg btn-orange">Register</button>
+                </div>
+                
+                <div class="entry-form-swap text-center">
+                  <span>Already have an account?<a href="/login">Login here</a>.</span>
                 </div>
               </div>
             </div>
