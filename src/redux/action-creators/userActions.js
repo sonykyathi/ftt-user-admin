@@ -12,7 +12,7 @@ import {
 
 export const login = (formData) => async (dispatch) => {
   try {
-    const res = await api.post(`/api/v1/auth/login`, formData);
+    const res = await api.post(`/api/v1/fttauth/login`, formData);
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,
@@ -27,7 +27,7 @@ export const login = (formData) => async (dispatch) => {
 
 export const register = (formData) => async (dispatch) => {
   try {
-    const res = await api.post(`/api/v1/auth/register`, formData);
+    const res = await api.post(`/api/v1/fttauth/register`, formData);
     dispatch({
       type: REGISTER_SUCCESS,
       payload: res.data,

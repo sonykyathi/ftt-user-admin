@@ -190,7 +190,7 @@ const BuyTokens = (props) => {
                         <div className='col-lg-12 '>
                           <div className='form-group'>
                             <label className="wallet-label" htmlFor='amountcontribution'>Wallet Address</label>
-                            <span className="form-wallet">Dont have a wallet?<a className ="form-createone" href="https://youtu.be/jnMxyXOTW8g" target="_blank" title="click hear">  Create one</a></span>
+                            <span className="form-wallet">Dont have a wallet?<a className ="form-createone" href="https://youtu.be/gMN1iii-lqY" target="_blank" title="click hear">  Create one</a></span>
                             
                             <input
                               type='text'

@@ -2,7 +2,7 @@
 import api from './api';
 
 export const getRoles = async () => {
-    return await api.get(`/api/v1/user/getrole`,
+    return await api.get(`/api/v1/fttuser/getrole`,
         {
             headers: {
                 'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ export const activeInactiveUser = async (data) => {
 }
 
 export const forgotPassowrd = async (data) => {
-    return await api.post(`/api/v1/user/forgot-password`, data,
+    return await api.post(`/api/v1/fttuser/forgot-password`, data,
         {
             headers: {
                 'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export const forgotPassowrd = async (data) => {
 }
 
 export const resetPassword = async (data) => {
-    return await api.post(`/api/v1/user/update-password`, data,
+    return await api.post(`/api/v1/fttuser/update-password`, data,
         {
             headers: {
                 'Content-Type': 'application/json',
